@@ -25,7 +25,8 @@ Sample Output 1:
 
 import re
 
-regex = r'\b[Тт]ы\b'
+# Напиши регулярное выражение в regex \(❤‿❤)/
+regex = r'(?i)\b\w*[^а-яё ][а-яё]+\b|\b[а-яё]+[^а-яё ]\w*\b|[^а-яё ]\w*[а-яё]+\w\b'
 
 result = re.finditer(regex, input())
 
